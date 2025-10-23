@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1BEDC7F-465D-4E48-92E1-C6F2857AF67C}|Inventory.Application\\Inventory.Application.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.application\\inventory.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F1BEDC7F-465D-4E48-92E1-C6F2857AF67C}|Inventory.Application\\Inventory.Application.csproj|solutionrelative:inventory.application\\inventory.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -19,10 +31,6 @@
       "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\inventory.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\inventory.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\inventory.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
@@ -37,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6F11C530-BE87-4BBC-A3CC-E0C9ACC676FE}|Inventory.Domain\\Inventory.Domain.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6F11C530-BE87-4BBC-A3CC-E0C9ACC676FE}|Inventory.Domain\\Inventory.Domain.csproj|solutionrelative:inventory.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|c:\\users\\lucas\\onedrive\\desktop\\inventory\\inventory-api\\inventory.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A12531B2-6F05-4D6B-A878-FD0668AE5284}|Inventory.API\\Inventory.API.csproj|solutionrelative:inventory.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,46 +58,33 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Inventory.API.http",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.http",
-              "RelativeDocumentMoniker": "Inventory.API\\Inventory.API.http",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.http",
-              "RelativeToolTip": "Inventory.API\\Inventory.API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-22T04:35:57.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Inventory.API\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Inventory.API\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Inventory.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\appsettings.json",
+              "RelativeToolTip": "Inventory.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-22T04:01:50.593Z",
+              "WhenOpened": "2025-10-23T00:10:56.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Program.cs",
               "RelativeDocumentMoniker": "Inventory.API\\Program.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Program.cs",
               "RelativeToolTip": "Inventory.API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T03:42:17.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "InventoryContext.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Infrastructure\\Context\\InventoryContext.cs",
               "RelativeDocumentMoniker": "Inventory.Infrastructure\\Context\\InventoryContext.cs",
@@ -101,12 +92,11 @@
               "RelativeToolTip": "Inventory.Infrastructure\\Context\\InventoryContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T03:39:48.084Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T03:39:48.084Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Domain\\Entities\\Product.cs",
               "RelativeDocumentMoniker": "Inventory.Domain\\Entities\\Product.cs",
@@ -114,13 +104,12 @@
               "RelativeToolTip": "Inventory.Domain\\Entities\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-22T03:37:48.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-22T03:37:48.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Inventory.API",
+              "DocumentIndex": 6,
+              "Title": "Inventory.API.csproj",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.csproj",
               "RelativeDocumentMoniker": "Inventory.API\\Inventory.API.csproj",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.csproj",
@@ -132,8 +121,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inventory.Infrastructure",
+              "DocumentIndex": 5,
+              "Title": "Inventory.Infrastructure.csproj",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
@@ -145,8 +134,8 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Inventory.Domain",
+              "DocumentIndex": 4,
+              "Title": "Inventory.Domain.csproj",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Domain\\Inventory.Domain.csproj",
               "RelativeDocumentMoniker": "Inventory.Domain\\Inventory.Domain.csproj",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Domain\\Inventory.Domain.csproj",
@@ -158,29 +147,53 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Inventory.Application",
+              "DocumentIndex": 3,
+              "Title": "Inventory.Application.csproj",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Application\\Inventory.Application.csproj",
               "RelativeDocumentMoniker": "Inventory.Application\\Inventory.Application.csproj",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.Application\\Inventory.Application.csproj",
               "RelativeToolTip": "Inventory.Application\\Inventory.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-10-22T03:35:15.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Inventory.API\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Inventory.API\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-22T03:34:50.487Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Inventory.API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Inventory.API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-22T04:01:50.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Inventory.API.http",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.http",
+              "RelativeDocumentMoniker": "Inventory.API\\Inventory.API.http",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Desktop\\Inventory\\Inventory-api\\Inventory.API\\Inventory.API.http",
+              "RelativeToolTip": "Inventory.API\\Inventory.API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-10-22T04:35:57.665Z"
             }
           ]
         }
