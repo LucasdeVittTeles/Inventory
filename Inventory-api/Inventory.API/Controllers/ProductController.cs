@@ -1,5 +1,5 @@
 ﻿using Inventory.Domain.Entities;
-using Inventory.Infrastructure.Context;
+using Inventory.Infrastructure.Data.Context;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Inventory.API.Controllers
