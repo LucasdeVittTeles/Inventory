@@ -1,5 +1,5 @@
 ﻿using Inventory.Domain.Entities;
-using Inventory.Infrastructure.Data.Context;
+using Inventory.Domain.Interfaces.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Inventory.API.Controllers
@@ -10,23 +10,56 @@ namespace Inventory.API.Controllers
     public class ProductController : Controller
     {
 
-        private readonly InventoryContext _context;
+        private readonly IProductService _service;
 
-        public ProductController(InventoryContext context)
+        public ProductController(IProductService service)
         {
-            _context = context;
+            _service = service;
         }
 
         [HttpGet]
-        public IActionResult Get() => Ok(_context.Products.ToList());
-
-        [HttpPost]
-        public IActionResult Post([FromBody] Product product)
+        public async Task<ActionResult<List<Product>>> GetAll()
         {
-            _context.Products.Add(product);
-            _context.SaveChanges();
-            return CreatedAtAction(nameof(Get), new { id = product.Id }, product);
+
+            List<Product> products = await _service.GetAllAsync();
+            return Ok(products);
+
         }
 
+        [HttpGet("{id:long}")]
+        public async Task<ActionResult<Product>> GetById(long id)
+        {
+
+            Product product = await _service.GetByIdAsync(id);
+            return Ok(product);
+
+        }
+
+        [HttpPost]
+        public async Task<ActionResult> Create([FromBody] Product product)
+        {
+
+            await _service.CreateAsync(product);
+            return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+
+        }
+
+        [HttpPut("{id:long}")]
+        public async Task<IActionResult> Update(long id, [FromBody] Product product)
+        {
+
+            await _service.UpdateAsync(product);
+            return NoContent();
+
+        }
+
+        [HttpDelete("{id:long}")]
+        public async Task<IActionResult> Delete(long id)
+        {
+
+            await _service.DeleteAsync(id);
+            return NoContent();
+
+        }
     }
 }

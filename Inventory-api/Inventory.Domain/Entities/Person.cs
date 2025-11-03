@@ -1,24 +1,36 @@
 ﻿namespace Inventory.Domain.Entities
 
 {
-    public class Product
+    public class Person
     {
+
         public long Id { get; set; }
+
         public string Name { get; set; }
-        public string Description { get; set; }
-        public int InventoryAmount { get; set; }
-        public decimal Price { get; set; }
+
+        public string Email { get; set; }
+
+        public string Phone { get; set; }
+
+        public string Address { get; set; }
+
+        public int PersonTypeId { get; set; }
+
         public DateTime CreatedAt { get; set; }
+
         public DateTime UpdatedAt { get; set; }
+
         public bool IsActive { get; set; }
-        public long CategoryId { get; set; }
-        public Category Category { get; set; }
+
+        public PersonType PersonType { get; set; }
 
 
-        public Product()
+        public Person()
         {
             Name = "";
-            Description = "";
+            Email = "";
+            Phone = "";
+            Address = "";
             CreatedAt = DateTime.Now;
             UpdatedAt = DateTime.Now;
             IsActive = true;

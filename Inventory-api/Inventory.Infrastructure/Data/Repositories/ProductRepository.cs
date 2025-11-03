@@ -1,43 +1,51 @@
 ﻿using Inventory.Domain.Entities;
 using Inventory.Domain.Interfaces.Repositories;
 using Inventory.Infrastructure.Data.Context;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Inventory.Infrastructure.Data.Repositories
 {
-    public class ProductRepository : IProdutoRepository
+    public class ProductRepository : IProductRepository
     {
-
 
         private readonly InventoryContext _context;
 
-        public Task AdicionarAsync(Product produto)
+        public ProductRepository(InventoryContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task AtualizarAsync(Product produto)
+        public async Task<List<Product>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Products.ToListAsync();
         }
 
-        public Task<Product> ObterPorIdAsync(Guid id)
+        public async Task<Product> GetByIdAsync(long id)
         {
-            throw new NotImplementedException();
+            return await _context.Products.FindAsync(id);
         }
 
-        public Task<List<Product>> ObterTodosAsync()
+        public async Task CreateAsync(Product product)
         {
-            throw new NotImplementedException();
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
         }
 
-        public Task RemoverAsync(Guid id)
+        public async Task UpdateAsync(Product product)
         {
-            throw new NotImplementedException();
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task DeleteAsync(long id)
+        {
+            var product = await _context.Products.FindAsync(id);
+
+            if (product != null)
+            {
+                _context.Products.Remove(product);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }
