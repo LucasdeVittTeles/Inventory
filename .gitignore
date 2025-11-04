@@ -1,0 +1,120 @@
+###############################################
+# GITIGNORE - Inventory Solution (.NET + React)
+###############################################
+
+# ====== GLOBAIS ======
+# Arquivos temporários e backups
+*.tmp
+*.bak
+*.old
+*.orig
+*~
+*.swp
+
+# Sistema / Editor
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+[Ll]ogs/
+
+# Arquivos de usuário
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Rider
+.idea/
+
+# Resultados de testes
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+###############################################
+# BACKEND (.NET Core)
+/Inventory-api/
+###############################################
+/Inventory-api/[Bb]in/
+/Inventory-api/[Oo]bj/
+/Inventory-api/[Ll]ogs/
+/Inventory-api/out/
+/Inventory-api/publish/
+
+/Inventory-api/*.db
+/Inventory-api/*.bak
+/Inventory-api/*.tmp
+
+# Configurações sensíveis
+/Inventory-api/appsettings.Development.json
+/Inventory-api/appsettings.Local.json
+/Inventory-api/secrets.json
+
+# Docker
+/Inventory-api/docker-compose.override.yml
+/Inventory-api/Dockerfile
+
+# NuGet / Build
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+**/bin/Debug/net*/
+**/bin/Release/net*/
+
+###############################################
+# FRONTEND (React)
+/Inventory-web/
+###############################################
+/Inventory-web/node_modules/
+/Inventory-web/build/
+/Inventory-web/dist/
+/Inventory-web/coverage/
+
+/Inventory-web/npm-debug.log*
+/Inventory-web/yarn-debug.log*
+/Inventory-web/yarn-error.log*
+/Inventory-web/pnpm-debug.log*
+/Inventory-web/lerna-debug.log*
+
+# Arquivos de ambiente (não versionar)
+/Inventory-web/.env
+/Inventory-web/.env.local
+/Inventory-web/.env.development.local
+/Inventory-web/.env.test.local
+/Inventory-web/.env.production.local
+
+###############################################
+# DOCKER / CI
+###############################################
+**/docker-compose.override.yml
+**/Dockerfile*
+**/docker-compose*.yml
+**/docker-compose*.yaml
+
+###############################################
+# MISC / PUBLICAÇÃO
+###############################################
+publish/
+out/
+artifacts/
+*.Publish.xml
+*.PublishSettings
+
+# Arquivos de cache temporário
+*.cache
+*.dbmdl
