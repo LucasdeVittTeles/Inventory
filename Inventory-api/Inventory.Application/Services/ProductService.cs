@@ -18,7 +18,7 @@ namespace Inventory.Application.Services
         private void ValidateFields(Product product)
         {
 
-            product.Name != "" 
+            
 
         }
 

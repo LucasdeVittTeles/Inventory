@@ -1,10 +1,12 @@
 using Inventory.Infrastructure;
 using Inventory.Infrastructure.Data.Context;
 using Microsoft.EntityFrameworkCore;
-
+using DotNetEnv;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Carrega o arquivo .env da pasta atual
+Env.Load();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
