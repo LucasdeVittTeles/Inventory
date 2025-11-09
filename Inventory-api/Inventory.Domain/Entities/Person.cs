@@ -22,7 +22,7 @@ namespace Inventory.Domain.Entities
         public string Address { get; set; }
 
         [Required]
-        public int PersonTypeId { get; set; }
+        public long PersonTypeId { get; set; }
 
         public DateTime CreatedAt { get; set; }
 
