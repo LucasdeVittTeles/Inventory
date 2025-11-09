@@ -10,7 +10,6 @@ namespace Inventory.Application.DTOs.Product
         [StringLength(100, ErrorMessage = "O nome deve ter até 100 caracteres")]
         public string Name { get; set; }
 
-
         [StringLength(500, ErrorMessage = "O nome deve ter até 100 caracteres")]
         public string Description { get; set; }
 

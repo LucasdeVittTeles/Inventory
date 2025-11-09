@@ -4,7 +4,6 @@ namespace Inventory.Domain.Interfaces.Repositories
 {
     public interface IProductRepository
     {
-
         Task<Product> GetByIdAsync(long id);
         Task<List<Product>> GetAllAsync();
         Task CreateAsync(Product produto);
