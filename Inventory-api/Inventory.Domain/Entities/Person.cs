@@ -1,4 +1,6 @@
-﻿namespace Inventory.Domain.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Inventory.Domain.Entities
 
 {
     public class Person
@@ -6,14 +8,20 @@
 
         public long Id { get; set; }
 
+        [Required]
+        [MaxLength(100)]
         public string Name { get; set; }
 
+        [Required]
+        [MaxLength(250)]
         public string Email { get; set; }
 
         public string Phone { get; set; }
 
+        [MaxLength(250)]
         public string Address { get; set; }
 
+        [Required]
         public int PersonTypeId { get; set; }
 
         public DateTime CreatedAt { get; set; }

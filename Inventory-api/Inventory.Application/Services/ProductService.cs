@@ -14,12 +14,22 @@ namespace Inventory.Application.Services
             _repository = repository;
         }
 
-
         private void ValidateFields(Product product)
         {
+            if (product == null)
+                throw new ArgumentNullException(nameof(product), "O produto não pode ser nulo.");
 
-            
+            if (string.IsNullOrWhiteSpace(product.Name))
+                throw new ArgumentException("O nome do produto é obrigatório.");
 
+            if (product.Price < 0)
+                throw new ArgumentException("O preço não pode ser negativo.");
+
+            if (product.CategoryId <= 0)
+                throw new ArgumentException("A categoria é obrigatória.");
+
+            if (product.InventoryAmount < 0)
+                throw new ArgumentException("A quantidade em estoque não pode ser negativa.");
         }
 
         public Task<List<Product>> GetAllAsync()
@@ -36,8 +46,6 @@ namespace Inventory.Application.Services
             {
                 throw new KeyNotFoundException("Produto não encontrado.");
             }
-
-
 
             return product;
 
@@ -56,6 +64,15 @@ namespace Inventory.Application.Services
 
         public async Task UpdateAsync(Product product)
         {
+
+            Product existingProduct = await _repository.GetByIdAsync(product.Id);
+
+            if (existingProduct == null)
+            {
+                throw new KeyNotFoundException($"Produto com chave {product.Id} não encontrado.");
+            }
+
+            ValidateFields(product);
             await _repository.UpdateAsync(product);
         }
 
