@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Carrega o arquivo .env da pasta atual
 Env.Load();
 
+var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION");
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -20,7 +21,7 @@ builder.Services.AddApplication();
 
 // Conexão com SQL Server
 builder.Services.AddDbContext<InventoryContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseSqlServer(connectionString));
 
 
 var app = builder.Build();

@@ -1,10 +1,30 @@
 ﻿using Inventory.Domain.Entities;
+using Inventory.Domain.Interfaces.Repositories;
 using Inventory.Domain.Interfaces.Services;
 
 namespace Inventory.Application.Services
 {
-    internal class TransactionService : ITransactionService
+    public class TransactionService : ITransactionService
     {
+
+        private readonly ITransactionRepository _repository;
+
+        public TransactionService(ITransactionRepository repository)
+        {
+            _repository = repository;
+        }
+
+        private void ValidateFields(Transaction transaction)
+        {
+            if (transaction == null)
+                throw new ArgumentNullException(nameof(transaction), "A transação não pode ser nula.");
+
+            if (transaction.PartnerId == 0)
+                throw new ArgumentException("Um parceiro é obrigatório");
+
+        }
+
+
         public Task CreateAsync(Transaction transaction)
         {
             throw new NotImplementedException();
@@ -17,12 +37,19 @@ namespace Inventory.Application.Services
 
         public Task<List<Transaction>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            return _repository.GetAllAsync();
         }
 
-        public Task<Transaction> GetByIdAsync(long id)
+        public async Task<Transaction> GetByIdAsync(long id)
         {
-            throw new NotImplementedException();
+            Transaction transaction = await _repository.GetByIdAsync(id);
+
+            if (transaction == null)
+            {
+                throw new KeyNotFoundException("Transação não encontrada.");
+            }
+
+            return transaction;
         }
 
         public Task UpdateAsync(Transaction transaction)
